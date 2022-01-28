@@ -11,16 +11,11 @@ public class DBConnection {
     static private String USER = "root";
     static private String PASS = "ernie6660";
 
-    public static Connection initDatabase() throws ClassNotFoundException {
-        try{
+    public static Connection initDatabase() throws ClassNotFoundException, SQLException {
+
             Class.forName(JDBC_DRIVER);
             Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
             return conn;
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return null;
-        }
     }
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
