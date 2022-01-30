@@ -1,0 +1,81 @@
+.backImage {
+    background-image: url("Books.jpg");
+    height: 1025px;
+    width: 1100px;
+}
+
+.container {
+    padding-top: 35%;
+    padding-left: 65%;
+    text-align: center;
+    justify-content: center;
+}
+
+.welcome {
+    height: 235px;
+    width: 500px;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .welcome {
+        animation: welcome-spin infinite 10s linear;
+    }
+}
+
+@keyframes welcome-spin {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.form-control:active,
+.form-control:focus,
+.form-control:focus:active {
+    border-color: blue;
+    color: blue;
+
+}
+input:not(:placeholder-shown) {
+    background-color: transparent !important;
+}
+input:placeholder-shown {
+    background-color: gold !important;
+}
+
+.addBook-centered, .addAuthor-centered{
+    position:absolute;
+    left:50%;
+    margin-left:-100px;
+    margin-top: 150px;
+    width: 100px;
+}
+
+.form-control{
+    background-color: white;
+}
+
+.container > a {
+    color: white;
+}
+
+.buttonContainer {
+    text-align: center;
+    justify-content: center;
+    padding-left: 25%;
+}
+
+.openBook {
+    background: url("openBook.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 75% 75%;
+
+
+
+}
+
